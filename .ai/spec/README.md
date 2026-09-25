@@ -39,6 +39,7 @@ AI agents. Content is optimized for precision and machine consumption.
 | Understand the temporary audit log pipeline | `what/templog.md` |
 | Understand Agentic product data collection | `what/agentic-data-collection.md` |
 | Understand multicluster operations | `what/multicluster-ops.md` |
+| Understand agent-to-agent federation | `what/a2a-federation.md` |
 | Understand alerts-adapter multicluster support | `what/alerts-adapter-multicluster.md` |
 | Understand how multicluster is tested | `what/multicluster-testing.md` |
 | Check cross-repo rules | `constraints.md` |

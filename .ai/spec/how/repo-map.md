@@ -169,6 +169,7 @@ These features span multiple repos. See the parent `what/` files for end-to-end 
 | Feature | Parent Spec | Repos |
 | --- | --- | --- |
 | Agentic run lifecycle | `what/agentic-runs.md` | alerts-adapter, team-harness event-adapter [PROTOTYPE], agentic-operator, agentic-sandbox, agentic-console |
+| A2A federation (dynamic peer discovery, consent, task lifecycle) | `what/a2a-federation.md` | service, operator, console, supported Lightspeed peers |
 | Agentic run termination (per-run cancellation, global hard-stop) | `what/agentic-run-termination.md` | agentic-operator, agentic-console |
 | Terminal AgenticRun retention | [PLANNED: OLS-4280] `what/terminal-run-ttl.md` | operator, agentic-operator, agentic-console (deadline display) |
 | Agentic security (approval auth, SA isolation) | `what/agentic-security.md` | agentic-operator, agentic-console |
