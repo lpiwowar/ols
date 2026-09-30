@@ -108,3 +108,9 @@ Each file follows the naming convention `NNNN-slug.md` (e.g., `0001-langchain-ll
 | # | Decision | Repos |
 |---|---|---|
 | [0043](0043-agentic-data-collection-via-otel.md) | Trace-only Agentic collection with mechanically classified raw candidates and Dataverse-owned logical models | operator, agentic-operator, agentic-sandbox, collector, Dataverse data product |
+
+### Operand Network Policies (2026-09)
+
+| # | Decision | Repos |
+|---|---|---|
+| [0044](0044-operand-network-policy-scope.md) | Scoped operand egress, documented dynamic-destination exceptions, standard NetworkPolicy pending acceptance | operator, hub, agentic-operator |
