@@ -41,7 +41,7 @@ Lookup table: concern → repo(s) → spec file(s). Use this to find where to go
 | Agentic alerts adapter deployment | lightspeed-operator | [PLANNED: OLS-3236] `what/reconciliation.md` |
 | Agentic console plugin deployment | lightspeed-operator | [PLANNED: OLS-3236] `what/reconciliation.md` |
 | Observability (ServiceMonitor, PrometheusRule) | lightspeed-operator | `what/observability.md` |
-| Security (RBAC, NetworkPolicy) | lightspeed-operator | `what/security.md` |
+| Security (RBAC, NetworkPolicy) | lightspeed-operator | Parent `what/operand-network-policies.md`; child `what/security.md` |
 | Config generation (olsconfig.yaml) | lightspeed-operator | `how/config-generation.md` |
 | Deployment generation | lightspeed-operator | `how/deployment-generation.md` |
 | CLI (oc-ols) | lightspeed-operator | `how/cli.md` |
@@ -76,6 +76,7 @@ Lookup table: concern → repo(s) → spec file(s). Use this to find where to go
 | Approval gates & policies | lightspeed-agentic-operator | `what/approval.md` |
 | Agentic CRD API (AgenticRun, Agent, LLMProvider) | lightspeed-agentic-operator | `what/crd-api.md` |
 | Sandbox provisioning & execution | lightspeed-agentic-operator | `what/sandbox-execution.md` |
+| Sandbox egress exception | lightspeed-agentic-operator | [PLANNED: OLS-4171] Parent `what/operand-network-policies.md`; child `what/sandbox-execution.md` |
 | Run-level tool configuration (MCP servers, skills, required secrets) | lightspeed-agentic-operator | [PLANNED: OLS-4060] `what/crd-api.md`, `what/sandbox-execution.md`, `what/run-lifecycle.md` |
 | Reconciler implementation | lightspeed-agentic-operator | `how/reconciler.md` |
 | CLI (oc-agentic) | lightspeed-agentic-operator | `how/cli.md` |
@@ -127,6 +128,7 @@ Lookup table: concern → repo(s) → spec file(s). Use this to find where to go
 | Fleet-wide alert aggregation | lightspeed-hub | `what/fleet-coordination.md` |
 | Spoke health monitoring | lightspeed-hub | `what/spoke-lifecycle.md` |
 | Cross-repo multicluster flow | ols (parent) | `what/multicluster-ops.md` |
+| Hub alerts-adapter egress exception | lightspeed-hub | [PLANNED: OLS-4171] Parent `what/operand-network-policies.md`; child `what/system-overview.md` |
 
 ## Multicluster OLS — Hub UI
 
@@ -175,6 +177,7 @@ These features span multiple repos. See the parent `what/` files for end-to-end 
 | MCP tool admission and RBAC metadata (`_meta` contract, pre-LLM filtering) | `what/mcp-tool-rbac.md` | agentic-sandbox, agentic-operator |
 | RAG pipeline (OKP + BYOK) | `what/rag-pipeline.md` | rag-content, service, operator |
 | Deployment lifecycle | `what/deployment-lifecycle.md` | operator, service, console, alerts-adapter [PLANNED: OLS-3236], agentic-console [PLANNED: OLS-3236] |
+| Operand network policies | [PLANNED: OLS-4171; OLS-3943] `what/operand-network-policies.md` | operator, hub (adapter exception), agentic-operator (sandbox exception), agentic-console (request path) |
 | Query pipeline | `what/query-pipeline.md` | console, service, operator, rag-content |
 | Tool-result prompt-injection inspection | `what/tool-result-inspection.md` | service, operator, agentic-operator, agentic-sandbox |
 | Compliance audit logging | `what/audit-logging.md` | agentic-operator, agentic-sandbox, service, operator, agentic-console |
